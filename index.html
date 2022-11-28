@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/f370228fe6.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<img class="logo"src="images/logo.svg" alt="">
+
+<i onclick="openNav()" class="fa-solid fa-bars fa-2x openbtn"></i>
+
+
+<div id="SidePanelMenu" class="sidepanel">
+ <h1  class="closebtn" onclick="closeNav()">X</h1>
+<div class="menus">
+  <a href="#">Features</a>
+  <button onclick="showCompanyFeatures()" class="arrow"type="button" name="button">&#709;</button>
+</div>
+<div class="companyFeatures">
+  <div class="feature">
+    <div class="featureLogos">
+      <img class=""src="images\icon-todo.svg" alt="">
+    </div>
+    <p class="featureList">Todo List</p>
+  </div>
+  <div class="feature">
+    <div class="featureLogos">
+      <img class=""src="images\icon-calendar.svg" alt="">
+    </div>
+    <p class="featureList">calendar</p>
+  </div>
+  <div class="feature">
+    <div class="featureLogos">
+      <img class=""src="images\icon-reminders.svg" alt="">
+    </div>
+    <p class="featureList">Reminders</p>
+  </div>
+  <div class="feature">
+    <div class="featureLogos">
+      <img class=""src="images\icon-planning.svg" alt="">
+    </div>
+    <p class="featureList">Plannings</p>
+  </div>
+</div>
+
+<div class="menus">
+  <a href="#">Company</a>
+  <button onclick="showCompanyInfo()"class="arrow"type="button" name="button">&#709;</button>
+
+</div>
+<div class="companyInfo">
+  <p class="aboutCompany">History</p>
+  <p class="aboutCompany">Our Team</p>
+  <p class="aboutCompany">Blog</p>
+</div>
+<div class="menus">
+  <a href="#">Careers</a>
+</div>
+<div class="menus">
+  <a href="#">About</a>
+</div>
+
+
+<div class="loginAndRegister">
+  <p>Login</p>
+  <button class="register"type="button" name="button">Register</button>
+</div>
+</div>
+
+<div class="main">
+  <div class="brandImage">
+    <img class="mainImage"src="images/image-hero-mobile.png" alt="">
+  </div>
+  <div class="content">
+    <h1>Make remote work</h1>
+
+    <div class="companyServices">
+      <p>Get your team in sync, no matter your location. Streamline processes,
+      create team rituals, and watch productivity soar.</p>
+    </div>
+
+    <button class="learn"type="button" name="button">Learn more</button>
+  </div>
+
+  <div class="clientLogos">
+    <img src="images\client-databiz.svg" alt="">
+    <img src="images\client-audiophile.svg" alt="">
+    <img src="images\client-meet.svg" alt="">
+    <img src="images\client-maker.svg" alt="">
+  </div>
+</div>
+
+
+
+<script src="index.js" charset="utf-8"></script>
+</body>
+</html>
